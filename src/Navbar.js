@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { unstable_createMuiStrictModeTheme as createMuiTheme } from '@material-ui/core';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 import Snackbar from '@material-ui/core/Snackbar';
@@ -19,9 +20,9 @@ class Navbar extends Component {
         this.setState({ open: false });
     }
     handleFormatChange(e){
-        this.setState({ format: e.target.value, open: true });
+        this.setState({ open: true, format: e.target.value});
         this.props.handleChange(e.target.value);
-        console.log(this.state.open)
+        
     }
     
     render() {
