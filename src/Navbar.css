@@ -45,3 +45,7 @@
     height: 12px;
     margin: -2px 0 0 -6px;
 }
+
+.select-container {
+    margin: 0 1rem 0 auto;
+}
