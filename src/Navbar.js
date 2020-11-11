@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import { unstable_createMuiStrictModeTheme as createMuiTheme } from '@material-ui/core';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -31,7 +32,7 @@ class Navbar extends Component {
         return(
             <header className="Navbar">
                 <div className="logo">
-                    <a href="#">reactcolorpicker</a>
+                    <Link to="/">reactcolorpicker</Link>
                 </div>
                 <div className="slider">
                     <div className="slider-container">
