@@ -34,8 +34,6 @@ const styles = theme =>  ({
   },
   navBtns: {
     marginRight: ".5rem",
-    display: "flex",
-    flexDirection: "column",
     "& a": {
       textDecoration: "none"
     },
